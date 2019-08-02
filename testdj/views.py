@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def hello(request):
-    context          = {}
+    context = {}
     context['name'] = 'Hello World!'
     context['description'] = 'Hello World!'
-    return render(request, 'index.html', )
+    return render(request, 'index.htm', context)
