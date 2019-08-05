@@ -5,4 +5,4 @@ def hello(request):
     context = {}
     context['name'] = 'Hello World!'
     context['description'] = 'Hello World!'
-    return render(request, 'index.htm', context)
+    return render(request, 'index.html', context)
